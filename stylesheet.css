@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+body{
+    width: 100%;
+    background-color: #F2F4FF;
+}
+
+.navbar{
+    margin: 0%;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.3s ease;
+    height: 4rem;
+    width: 100%;
+   /* background-color: #A6CFD5;*/
+    font-family: 'Saira', sans-serif;
+
+}
+
+.navbar.sticky{
+
+    background: #A6CFD5;
+    /*border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;*/
+}
+.logo{
+    font-size: 1.5rem;
+    padding-top: 1.2%;
+    position: absolute;
+    left: 3%;
+    padding-bottom: 0.5%;
+}
+
+.navbar .logo a span{
+    color:#664565;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #01000d;
+    animation: ease-in-out;
+    animation-duration: 3s;
+}
+
+a:hover{
+    color: #003;
+    text-decoration: none;
+    
+}
+
+a:after {
+    border-radius: 1em;
+    border-top: .1em solid #664565;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+  }
+  
+  a:hover:after {
+    right: 0;
+  }
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar li{
+    display: inline-block;
+    position: relative;
+    left: 75%;
+    padding-top: 1.5%;
+    margin-right: 1.2%;
+    padding-bottom: 0.3%;
+   
+}
+
+.first{
+    font-family: 'Sansita', sans-serif;
+    font-size: 6rem;
+    position: absolute;
+    padding-left: 5%;
+    margin: 0%;
+    top: 210px;
+}
+
+.name{
+    font-family: 'Saira', sans-serif;
+    margin: 0%;
+    font-size: 3.5rem;
+    padding-left: 5%;
+    position: absolute;
+    top: 310px;
+}
+
+ /*.name span{
+   color: #664565;
+}*/
+
+.dev{
+    font-family: 'Saira', sans-serif;
+    margin: 0%;
+    font-size: 3rem;
+    padding-left: 5%;
+    position: absolute;
+    top: 360px;
+}
+
+
+.photo-pp{
+    width: 28%;
+    height: auto;
+    border-radius: 100%;
+    position: relative;
+    left: 29%;
+    top: 2rem;
+}
+
+.blob{
+    position: relative;
+    width: 35%;
+    height: auto;
+    left: 60%;
+    top: 4em;
+}
+
+.photo-w{
+    width: 38%;
+    height: auto;
+    position: relative;
+    top: -10rem;
+    padding-left: 3%;
+}
+
+.about-title{
+    font-family: 'Sansita', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    top: 4em;
+    left: 44%;
+    width: 200px;
+}
+
+.about-p{
+    font-family: 'Saria', sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+    left: 44%;
+    top: 9em;
+    width: 50%;
+    text-align: justify;
+}
+
+
+#spin {
+    color: #664565;
+  }
+  #spin:after {
+    content:"";
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"Developer";}
+    50% { content:"Student";}
+    75% { content:"Designer";}
+    100% { content:"Freelancer";}
+
+  }
+
+
+@media screen and (min-width: 701px) {
+    .about-title {
+        font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  }
